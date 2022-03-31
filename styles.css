@@ -1,0 +1,60 @@
+:root{
+    --bg-gray: #F5F5F5;
+    --light-blue: #C2EEF5;
+    --highlight-blue: #4CD1FF;
+    --border-gray: #E5E7EB;
+}
+.container {
+    display: flex;
+}
+/* Left side of signup */
+.forestContainer {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    height: 1vh;
+}
+
+.darkOverlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* right side of signup */
+.contentContainer{
+    flex: auto;
+    height: 1vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.standardBackground {
+    flex: auto;
+}
+.strongText {
+    flex: auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.formTitle {
+    display: flex;
+}
+
+.formRow {
+    display: flex;
+}
+.formElement {
+    display: flex;
+    flex-direction: column;
+}
+.formElement label {
+    flex: auto;
+}
+.formElement input {
+    flex: auto;
+}
+
