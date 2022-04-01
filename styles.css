@@ -8,6 +8,22 @@
 body {
     padding: 0px;
     margin:0px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--highlight-blue);
+}
+
+button {
+    background-color: var(--highlight-blue);
+    border-width: 0px;
+    border-radius: 5px;
+    border-color: transparent;
+    color: white;
+    font-size: 15px;
+    padding: 10px 25px;
 }
 
 .container {
@@ -28,49 +44,129 @@ body {
     background-repeat: no-repeat;
     /* background-size: 1vh; */
     background-size: auto max(100%,450px);
+    justify-content: space-between;
 }
 
 .darkOverlay {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 130px;
+    height: 90px;
+    background-color: #39393969;
+    gap: 15px;
+    /* opacity: 40%; */
+}
+
+#logo {
+    height: 80%;
+    width:auto;
+    padding: 0px;
+    margin: 0px;
+}
+
+.companyName {
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    color: white;
+}
+
+
+.footer {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
 /* right side of signup */
 .contentContainer{
-    flex: auto;
-    height: 1vh;
-    display: flex;
-    flex-direction: column;
+    height: 100vh;
     width: max(600px, 62vw);
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--bg-gray);
 }
 
-.standardBackground {
-    flex: auto;
+.contentContainer > * {
+    padding-left: 30px;
+    padding-right: max(20%, 50px);
 }
+
+#signupTop {
+    height: 220px;
+    display: flex;
+    align-items: flex-end;
+}
+
+#signupBottom {
+    flex: auto;
+    height: auto;
+    align-items: flex-end;
+    padding-top: 20px;
+    font-size: small;
+}
+
 .strongText {
     flex: auto;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 20px 0px;
+}
+
+.regularText {
+    font-size: 10px;
+    padding: 20px 0px;
 }
 
 .form {
     display: flex;
     flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 10px;
+    background-color: white;
+    box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.2);;
 }
+
 .formTitle {
     display: flex;
+    font-size: 17px;
 }
 
 .formRow {
     display: flex;
+    justify-content: left;
+    gap: 20px;
 }
 .formElement {
     display: flex;
     flex-direction: column;
+    width: 200px;
+    gap: 3px;
 }
 .formElement label {
     flex: auto;
+    font-size: 10px;
 }
 .formElement input {
     flex: auto;
+    font-size: 10px;
+    height: 20px;
+}
+
+.formElement input:focus {
+    outline:#4CD1FF;
+    border-color: var(--highlight-blue);
+    border-style: solid;
+    border-radius: 3px;
+}
+
+input:invalid {
+    outline:red;
+    border-color: red;
+    border-style: solid;
+    border-radius: 3px;
 }
 
