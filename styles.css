@@ -154,6 +154,9 @@ button {
     flex: auto;
     font-size: 10px;
     height: 20px;
+    border-color: var(--border-gray);
+    border-radius: 3px;
+    border-style: solid;
 }
 
 .formElement input:focus {
